@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Favourites">
-        <activity android:name=".CategoryItemsActivity"></activity>
-        <activity android:name=".SplashScreen">
+        <activity android:name=".CategoryItemsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
