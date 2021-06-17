@@ -17,7 +17,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.uxap.favourites.MainActivity;
 import com.uxap.favourites.R;
 import com.uxap.favourites.controller.CategoryListRecyclerAdapter;
 import com.uxap.favourites.interfaces.CategoryInteractionListener;
@@ -25,7 +24,6 @@ import com.uxap.favourites.interfaces.CategoryItemListener;
 import com.uxap.favourites.model.CategoryDataManager;
 import com.uxap.favourites.model.CategoryDataModel;
 
-import java.util.ArrayList;
 
 public class Fmt_category_list extends Fragment implements CategoryItemListener {
 

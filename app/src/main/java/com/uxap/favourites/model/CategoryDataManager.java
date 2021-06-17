@@ -2,7 +2,6 @@ package com.uxap.favourites.model;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.util.Log;
 
 import androidx.preference.PreferenceManager;
 
@@ -12,11 +11,8 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 public class CategoryDataManager {
     private Context context;
@@ -30,12 +26,7 @@ public class CategoryDataManager {
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-
-//        ArrayList<CategoryDataModel> dataArray = new ArrayList<>();
-//        dataArray.add(categoryDataModel);
-
         List<CategoryDataModel> list = Arrays.asList(categoryDataModel);
-
         String dataAsJsonString = gson.toJson(list);
 
         editor.putString(categoryDataModel.getCategoryTitle(),dataAsJsonString);
@@ -48,7 +39,6 @@ public class CategoryDataManager {
         ArrayList<CategoryDataModel> dataArray = new ArrayList<>();
 
         for(Map.Entry<String,?> item : mappedData.entrySet()){
-
             String jsonString = (String)item.getValue();
 
             gson = new Gson();

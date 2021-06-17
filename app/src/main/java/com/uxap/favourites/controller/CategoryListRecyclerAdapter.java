@@ -1,6 +1,5 @@
 package com.uxap.favourites.controller;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,12 +9,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.uxap.favourites.R;
 import com.uxap.favourites.interfaces.CategoryItemListener;
-import com.uxap.favourites.model.CategoryDataManager;
 import com.uxap.favourites.model.CategoryDataModel;
 import com.uxap.favourites.view.CategoryListRecyclerViewHolder;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class CategoryListRecyclerAdapter extends RecyclerView.Adapter<CategoryListRecyclerViewHolder> {
 
@@ -26,7 +23,6 @@ public class CategoryListRecyclerAdapter extends RecyclerView.Adapter<CategoryLi
     public CategoryListRecyclerAdapter(ArrayList<CategoryDataModel> categoryDataArray, CategoryItemListener categoryItemListener) {
         this.categoryDataArrayList = categoryDataArray;
         this.categoryItemListener = categoryItemListener;
-//        getTempData(categoryDataArrayList);
     }
 
     @NonNull

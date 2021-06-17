@@ -1,37 +1,33 @@
 package com.uxap.favourites;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.uxap.favourites.controller.CategoriesItemsRecyclerAdapter;
-import com.uxap.favourites.controller.CategoryListRecyclerAdapter;
 import com.uxap.favourites.fragments.Fmt_category_list;
 import com.uxap.favourites.interfaces.CategoryInteractionListener;
-import com.uxap.favourites.model.CategoryDataManager;
 import com.uxap.favourites.model.CategoryDataModel;
 
 import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
-import java.util.regex.Pattern;
+
+/*
+*
+* ////////////////////// Built by UXAP. /////////////////////////////
+*
+* */
 
 public class MainActivity extends AppCompatActivity implements CategoryInteractionListener {
     public static final String CATEGORY_DATA_MODEL_OBJ_CODE = "100";

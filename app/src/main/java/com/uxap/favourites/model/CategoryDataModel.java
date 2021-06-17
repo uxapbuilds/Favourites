@@ -17,23 +17,12 @@ public class CategoryDataModel implements Serializable {
         return categoryTitle;
     }
 
-    public void setCategoryTitle(String categoryTitle) {
-        this.categoryTitle = categoryTitle;
-    }
-
     public String getCategoryDateAdded() {
         return categoryDateAdded;
-    }
-
-    public void setCategoryDateAdded(String categoryDateAdded) {
-        this.categoryDateAdded = categoryDateAdded;
     }
 
     public ArrayList<String> getCategoryItems() {
         return categoryItems;
     }
 
-    public void setCategoryItems(ArrayList<String> categoryItems) {
-        this.categoryItems = categoryItems;
-    }
 }

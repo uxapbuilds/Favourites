@@ -2,7 +2,6 @@ package com.uxap.favourites;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,7 +22,6 @@ import com.uxap.favourites.controller.CategoriesItemsRecyclerAdapter;
 import com.uxap.favourites.interfaces.CategoryDataListener;
 import com.uxap.favourites.model.CategoryDataModel;
 
-import java.util.ArrayList;
 
 public class CategoryItemsActivity extends AppCompatActivity implements CategoryDataListener {
     private TextView ctTextLabel;
