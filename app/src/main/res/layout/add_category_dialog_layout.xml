@@ -36,7 +36,7 @@
             android:textSize="12sp"
             android:layout_gravity="center"
             android:textAlignment="center"
-            android:text="@string/add_category_msg"/>
+            android:text="Please type the name of category"/>
 
         <EditText
             android:layout_margin="15dp"
